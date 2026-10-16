@@ -1,0 +1,29 @@
+{
+  "name": "@lekhapana/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch --watch-preserve-output src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "seed:reset": "node src/scripts/seed.js --reset"
+  },
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "compression": "^1.7.5",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.15.2",
+    "zod": "^3.24.1"
+  }
+}

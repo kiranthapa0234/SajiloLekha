@@ -1,0 +1,21 @@
+{
+  "name": "@lekhapana/tests",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --config ../vitest.config.js",
+    "test:watch": "vitest --config ../vitest.config.js",
+    "test:server": "vitest run --config ../vitest.config.js tests/server",
+    "test:client": "vitest run --config ../vitest.config.js tests/client",
+    "coverage": "vitest run --config ../vitest.config.js --coverage"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "@testing-library/react": "^16.1.0",
+    "jsdom": "^25.0.1",
+    "mongodb-memory-server": "^10.1.2",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.8"
+  }
+}
